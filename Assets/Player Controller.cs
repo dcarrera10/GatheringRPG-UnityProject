@@ -50,7 +50,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""6ad12cde-18b8-4c2b-950c-e883a4226c7e"",
-                    ""path"": """",
+                    ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -81,7 +81,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""up"",
+                    ""name"": ""down"",
                     ""id"": ""2a6991ed-c327-4b37-9c5e-c27faccaeda0"",
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
@@ -92,7 +92,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""down"",
+                    ""name"": ""up"",
                     ""id"": ""1539d625-2134-4970-82fe-922017760057"",
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
@@ -103,7 +103,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""left"",
+                    ""name"": ""right"",
                     ""id"": ""89b0dfcf-4fd4-4dcb-88d0-deaf2b1af06e"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
@@ -114,7 +114,7 @@ public class @PlayerController : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""right"",
+                    ""name"": ""left"",
                     ""id"": ""896f834a-ba9d-439a-94c4-670f7c4906a9"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",

@@ -15,11 +15,13 @@ public class CharacterCombat : MonoBehaviour
         myStats = GetComponent<CharacterStat>();
     }
 
+    // Setting up the cooldown to go down over time
     void Update()
     {
         attackCooldown -= Time.deltaTime;
     }
 
+    // Damage is taken depending on the target's stats
     public void Attack(CharacterStat targetStats)
     {
         if (attackCooldown <= 0f)

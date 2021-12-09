@@ -10,7 +10,7 @@ public class PlayerController2 : MonoBehaviour
     Vector3 movement;
     public float speed = 10;
 
-    // Start is called before the first frame update
+    // Pulling in the controls from the Player Input
     void Awake()
     {
         controls = new @PlayerController();
@@ -31,20 +31,17 @@ public class PlayerController2 : MonoBehaviour
         controls.Player.Disable();
     }
 
-    void SendMessage(Vector2 coordinates)
-    {
-        //Debug.Log("WASD coordinates = " + coordinates);
-    }
-
-    // Update is called once per frame
+    // Setting up movement
     void FixedUpdate()
     {
         movement = new Vector3(move.x, 0.0f, move.y) * speed * Time.deltaTime;
         transform.Translate(movement, Space.World);
     }
 
+    // Setting up the player to be able to rotate in the direction they're moving
     void Update()
     {
+
         if (movement.x != 0 || movement.z != 0)
         {
             Quaternion lookRotation = Quaternion.LookRotation(new Vector3(movement.x, 0, movement.z));

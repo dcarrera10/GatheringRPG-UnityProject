@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour
 
     bool hasInteracted = false;
 
-    // Update is called once per frame
+    // Setting up the distance to be able to interact and when the player can interact
     void Update()
     {
         float distance = Vector3.Distance(player.position, interactionTransform.position);
@@ -31,8 +31,20 @@ public class Interactable : MonoBehaviour
         }
     }
 
+    // Allows different types of interactions to take place by overwritting method
     public virtual void Interact()
     {
-        //Debug.Log("Interacting with " + transform.name);
+
+    }
+
+    // Draws radius in the editor
+    void OnDrawGizmosSelected()
+    {
+        if (interactionTransform == null)
+            interactionTransform = transform;
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(interactionTransform.position, radius);
     }
 }
+
