@@ -23,7 +23,7 @@ public class CharacterStat : MonoBehaviour
 
     }
 
-    //How the character takes damage
+    // How the character takes damage
     public void TakeDamage (int damage)
     {
         currentHealth -= damage;

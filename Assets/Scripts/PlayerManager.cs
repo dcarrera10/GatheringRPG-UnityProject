@@ -18,6 +18,7 @@ public class PlayerManager : MonoBehaviour
 
     public GameObject player;
 
+    // Reloads the scene when actived when the player loses all health
     public void KillPlayer()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

@@ -12,13 +12,13 @@ public class GenerateEnemies : MonoBehaviour
     public int randzPos;
     public int enemyCount;
 
-    // Start is called before the first frame update
+    // Starts spawning enemies
     void Start()
     {
         StartCoroutine(EnemyDrop());
     }
 
-    // Update is called once per frame
+    // Spawns in new enemies at a random location when under a certain number
     IEnumerator EnemyDrop()
     {
         while (enemyCount < 10)

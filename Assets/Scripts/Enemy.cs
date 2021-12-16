@@ -13,6 +13,8 @@ public class Enemy : Interactable
         playerManager = PlayerManager.instance;
         myStats = GetComponent<CharacterStat>();
     }
+
+    // Overrides the Interact system so that the enemy has a way of attacking
     public override void Interact()
     {
         base.Interact();

@@ -13,7 +13,6 @@ public class Item : ScriptableObject
     public virtual void Use()
     {
         // Use the item
-        // Something may happen
 
         Debug.Log("Using " + name);
     }

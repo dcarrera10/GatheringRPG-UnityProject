@@ -20,7 +20,7 @@ public class EnemyController : MonoBehaviour
         combat = GetComponent<CharacterCombat>();
     }
 
-    // Update is called once per frame
+    // Sets up a radius to set off when to follow the player and another radius of when to attack the player
     void Update()
     {
         float distance = Vector3.Distance(target.position, transform.position);
@@ -41,6 +41,7 @@ public class EnemyController : MonoBehaviour
             }
         }
 
+        // So the enemy faces the player as they move
         void FaceTarget ()
         {
             Vector3 direction = (target.position - transform.position).normalized;

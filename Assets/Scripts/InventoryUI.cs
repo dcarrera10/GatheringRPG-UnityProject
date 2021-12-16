@@ -15,7 +15,7 @@ public class InventoryUI : MonoBehaviour
         inventory.onItemChangedCallback += UpdateUI;
     }
 
-    // Update is called once per frame
+    // Sets input for the inventory
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
@@ -25,7 +25,7 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
-    //Updates the UI when adding a item or deleting empty slots
+    // Updates the UI when adding a item or deleting empty slots
     public void UpdateUI()
     {
         InventorySlot[] slots = GetComponentsInChildren<InventorySlot>();

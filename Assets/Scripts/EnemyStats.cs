@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyStats : CharacterStat
 {
+    // Gives the enemy a dedicated death
     public override void Die()
     {
         base.Die();
